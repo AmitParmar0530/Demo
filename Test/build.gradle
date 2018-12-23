@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+}
+
+repositories {
+    mavenCentral()
+}
+
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Demo Project',
+                   'Implementation-Version': version,
+                   'Main-Class': 'com.demo.main.Helloworld'
+    }
+}
